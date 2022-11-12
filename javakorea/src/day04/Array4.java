@@ -26,15 +26,31 @@ public class Array4 {
 		nations[3] = "중국";
 		nations[4] = "일본";
 		
-		for(int i=0; i<nations.length; i++)
-			System.out.println("어느나라의 수도가 궁금하신가요?");
+		cities[0] = "서울";
+		cities[1] = "서울";
+		cities[2] = "워싱턴";
+		cities[3] = "베이징";
+		cities[4] = "도쿄";
+		
+		while(true) {
+			System.out.println("어느나라 수도가 궁금하신가요?");
 			in = sc.next();
-			if(in.equals("미국")) {
-				System.out.println(nations[i]+"의 수도는"+cities[]);
+
+			if(in.equals("0")){
+				break;
+			}else{
+				for(idx=0; idx<nations.length; idx++){
+					if(in.equals(nations[idx])){
+						System.out.println(nations[idx]+"의 수도는 "+cities[idx]);
+						break;
+					}else if(!in.equals(nations[idx])){
+						System.out.println("없는 나라입니다.");
+						continue;
+					}
+				}
 			}
-			
-		// 손성종 tbxmtbfm@naver.com 010-2580-2463
-			
-			
+		}
+		
+		// 정답지는 day05의 Quiz에서 확인
 	}
 }
