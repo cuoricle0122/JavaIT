@@ -36,7 +36,7 @@ class MyClass{				// 변수 + 함수
 		return 0;			// return : 함수를 끝내고 사용한 곳에다가 최종값을 전달함
 	}
 	
-	int Print2() {
+	int Print2(int num) {
 	for(int i=0; i<5; i++) {
 		System.out.println(str+num);
 	}

@@ -92,7 +92,7 @@ class MyStringLogo{
 		return num1+num2;
 	}
 
-	public double getDiv() {
+	public double getDiv(String logo) {
 		if(num2 == 0) {
 			System.out.println("logo");
 			return 0.0;

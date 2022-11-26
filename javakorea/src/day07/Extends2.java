@@ -17,7 +17,7 @@ public class Extends2 {
 		MyOperLogo mol = new MyOperLogo();
 		mol.setNum(3,-4);
 		mol.getPlus("==logo==");
-		mol.getDiv("==logo==");
+		mol.getDiv();
 		
 		// 수정사항 : 나눗셈 | 버그
 		
@@ -68,9 +68,6 @@ class MyOperEx extends MyOper{					// 복붙 끝
 }
 
 class MyOperLogo extends MyOper{
-	
-	// 추가
-	@Override
 	public int getPlus(String str) {
 		System.out.print(str);
 		return super.getPlus();
