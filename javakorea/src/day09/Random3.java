@@ -19,15 +19,15 @@ class MyRandom3{
 		System.out.print("최소 범위를 입력하세요 >>");
 		num1 = Integer.parseInt(sc.nextLine());
 		
-		System.out.println("최대 범위를 입력하세요 >>");
+		System.out.print("최대 범위를 입력하세요 >>");
 		num2 = Integer.parseInt(sc.nextLine());
 		
 		// 여기에 최소 ~ 최대를 랜덤돌리기
-		Random rand = new Random();
 		// 방법1
-		result = rand.nextInt(num2 - num1) + num1;
+		Random rand = new Random();
+		result = rand.nextInt(num2-num1) + num1;
 		// 방법2
-		result = (int)Math.random()*(num2 - num1) + num1;
+		// result = (int)Math.random()*(num2-num1) + num1;
 		
 		System.out.println(result);
 		sc.close();
